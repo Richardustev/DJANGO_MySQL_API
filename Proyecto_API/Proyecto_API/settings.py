@@ -74,14 +74,19 @@ WSGI_APPLICATION = 'Proyecto_API.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Carga las variables del archivo .env
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'root',
-        'NAME': 'django_api',
-        'PASSWORD': '123456',
+        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '3306'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'NAME': os.getenv('DB_NAME', 'django_api'),
+        'PASSWORD': os.getenv('DB_PASSWORD', ''),
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         }

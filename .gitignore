@@ -2,3 +2,6 @@
 # Entornos virtuales
 env/
 .env/
+
+# .env/Proyecto_API
+.env
