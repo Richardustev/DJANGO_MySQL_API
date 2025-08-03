@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Proyecto_API.wsgi.application'
 from dotenv import load_dotenv
 import os
 
-load_dotenv()  # Carga las variables del archivo .env
+load_dotenv('../.env')  # Carga las variables del archivo .env
 
 # Database configuration using environment variables
 DATABASES = {
