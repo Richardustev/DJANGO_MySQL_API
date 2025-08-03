@@ -23,14 +23,26 @@ source env/bin/activate  # Linux/Mac
 python install -r requirements.txt
 ```
 
-### 3. Database Migrations
+### 3. Create an .env file in the root folder.
+DJANGO_MySQL_API/.env (with the following structure).
+```
+# Database settings
+DB_ENGINE=django.db.backends.mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=your_username
+DB_NAME=django_api
+DB_PASSWORD=your_password
+```
+
+### 4. Database Migrations
 ```
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
-### 4. Start Project
+### 5. Start Project
 ```
 python manage.py runserver
 ```
