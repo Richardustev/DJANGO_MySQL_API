@@ -47,7 +47,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-📡 API Endpoints
+### 📡 API Endpoints
 Method	Endpoint	Description
 ```
 GET	/api/companies/	List all companies
