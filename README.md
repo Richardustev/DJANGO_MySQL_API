@@ -12,7 +12,7 @@
 virtualenv -p python3 env
 ```
 
-# Activate it:
+### Activate it:
 ```
 source env/bin/activate  # Linux/Mac
 .\env\Scripts\activate   # Windows
