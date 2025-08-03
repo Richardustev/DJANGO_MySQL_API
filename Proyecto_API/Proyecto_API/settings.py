@@ -79,6 +79,7 @@ import os
 
 load_dotenv()  # Carga las variables del archivo .env
 
+# Database configuration using environment variables
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),

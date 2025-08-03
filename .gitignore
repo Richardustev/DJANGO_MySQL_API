@@ -4,4 +4,4 @@ env/
 .env/
 
 # .env/Proyecto_API
-.env
+Proyecto_API/env
