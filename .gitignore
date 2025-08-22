@@ -5,3 +5,6 @@ env/
 
 # .env/Proyecto_API
 .env
+
+#node_modules
+node_modules/
